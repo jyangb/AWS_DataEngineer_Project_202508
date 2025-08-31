@@ -62,7 +62,24 @@ Default output format [None]: json
 
 ---
 
-## 5. Verify Configuration
+## 5. Tips on Using Multiple Profiles (for AWS CLI configuration)
+Run:
+```bash
+aws configure --profile dev
+aws configure --profile prod
+```
+
+Switching Profiles: 
+Use --profile in each command:
+```
+aws sts get-caller-identity --profile dev
+aws sts get-caller-identity --profile prod
+```
+
+
+---
+
+## 6. Verify Configuration
 Test your setup:
 ```bash
 aws sts get-caller-identity
