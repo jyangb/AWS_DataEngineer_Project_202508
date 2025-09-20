@@ -214,3 +214,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project specific ignores
+# Ignore all raw data files
+raw_data/*
+# Ignore this hidden system file that macOS 
+# automatically creates in every folder you open with Finder.
+.DS_Stores
